@@ -24,10 +24,16 @@ public class Encryption {
 	private static String encryptThis(String s1){
 		
 		StringBuilder done2 = new StringBuilder();
-		
+		//Converting each char in string to int then incrementing ASCII value
 		for(int i = 0; i < s1.length(); i++){
 			int letter = s1.charAt(i);
-			letter++;
+			//Start with at least one
+			if(i == 0){
+				letter++;
+			}
+			
+			//letter++;
+			letter += i;
 			done2.append((char)letter);
 		}
 		
@@ -45,7 +51,13 @@ public class Encryption {
 		
 		for(int i = 0; i < s1.length(); i++){
 			int letter = s1.charAt(i);
-			letter--;
+			
+			if(i == 0){
+				letter--;
+			}
+			
+			//letter--;
+			letter -= i;
 			done2.append((char)letter);
 		}
 		

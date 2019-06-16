@@ -31,8 +31,8 @@ public class DarkSoulsLoadState {
 
 	public static void main(String[] args) throws IOException{
 		
-		File currentSave = new File("C:/Users/Asaad_ak/AppData/Roaming/DarkSoulsII/0110000100001337/DARKSII0000.sl2");
-		File newSave = new File("C:/Users/Asaad_ak/Desktop/darkSoulsBackUps/DARKSII0000.sl2");
+		File currentSave = new File("C:/Users/User/AppData/Roaming/DarkSoulsII/0110000100001337/DARKSII0000.sl2");
+		File newSave = new File("C:/Users/User/Desktop/darkSoulsBackUps/DARKSII0000.sl2");
 		
 		
 		copyFileUsingStream(newSave, currentSave);		
